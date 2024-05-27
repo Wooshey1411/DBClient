@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #fc9003;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.nsu.database.airportclient.gui.AddTicketController">
+   <bottom>
+      <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onAddBtnClick" prefHeight="50.0" prefWidth="600.0" style="-fx-background-color: #0086FF;" text="Добавить" BorderPane.alignment="CENTER">
+         <font>
+            <Font name="Georgia Italic" size="24.0" />
+         </font>
+      </Button>
+   </bottom>
+   <center>
+      <ScrollPane fx:id="scrollPane" hbarPolicy="NEVER" prefHeight="200.0" prefWidth="200.0" style="-fx-background: #f08132;" BorderPane.alignment="CENTER" />
+   </center>
+   <left>
+      <VBox prefHeight="350.0" prefWidth="130.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="passportTextField">
+               <VBox.margin>
+                  <Insets left="2.0" right="2.0" top="5.0" />
+               </VBox.margin>
+            </TextField>
+            <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onCheckPassportBtnClick" style="-fx-background-insets: 0;" text="Проверить паспорт">
+               <VBox.margin>
+                  <Insets left="2.0" right="2.0" top="5.0" />
+               </VBox.margin>
+            </Button>
+            <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onCheckPlacesBtnClick" style="-fx-background-insets: 0;" text="Проверить места">
+               <VBox.margin>
+                  <Insets left="2.0" right="2.0" top="50.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+   </left>
+</BorderPane>
